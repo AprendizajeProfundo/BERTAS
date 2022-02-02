@@ -1,0 +1,2 @@
+Aquí se podrán encontrar herramientas básicas para la limpieza y el preprocesamiento de datos usando librerías como Spacy, Stanza.
+Además, algunos modelos base para la predicción de calificaciones.
