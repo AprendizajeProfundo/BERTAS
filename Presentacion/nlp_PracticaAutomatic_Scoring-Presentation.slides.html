@@ -14495,6 +14495,9 @@ a.anchor-link {
 .reveal {
   font-size: 160%;
 }
+.reveal table {
+  font-size: var(--jp-ui-font-size1);
+}
 .reveal pre {
   width: inherit;
   padding: 0.4em;
@@ -14538,6 +14541,23 @@ div.jp-OutputPrompt {
   margin: 5px 5px 0 0;
 }
 
+.reveal div.highlight {
+  margin: 0;
+}
+
+.reveal div.highlight > pre {
+  margin: 0;
+  width: 100%;
+  font-size: var(--jp-code-font-size);
+}
+
+.reveal div.jp-OutputArea-output > pre {
+  margin: 0;
+  width: 90%;
+  font-size: var(--jp-code-font-size);
+  box-shadow: none;
+}
+
 /* Reveal navigation controls */
 
 .reveal .controls .navigate-left,
@@ -14578,17 +14598,14 @@ div.jp-OutputPrompt {
 
 /* Scrollbars */
 
-::-webkit-scrollbar
-{
+::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-::-webkit-scrollbar *
-{
-  background:transparent;
+::-webkit-scrollbar * {
+  background: transparent;
 }
-::-webkit-scrollbar-thumb
-{
+::-webkit-scrollbar-thumb {
   background: #727272 !important;
 }
 </style>
@@ -14615,12 +14632,12 @@ div.jp-OutputPrompt {
                 },
                 displayAlign: 'center',
                 CommonHTML: {
-                    linebreaks: { 
-                    automatic: true 
+                    linebreaks: {
+                    automatic: true
                     }
                 }
             });
-        
+
             MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
         }
     }
@@ -14643,7 +14660,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <figure>
 <img src="../Imagenes/logo-final-ap.png"  width="80" height="80" align="left"/> 
-</figure><h1 id="Aprendizaje-Profundo"><span style="color:blue"><left>Aprendizaje Profundo</left></span><a class="anchor-link" href="#Aprendizaje-Profundo">&#182;</a></h1><h2 id="Automatic-Essay-Scoring-of-multiple-traits-based-on-Transformer-sentences-models"><span style="color:red"><center>Automatic Essay Scoring of multiple traits based on Transformer-sentences models</center></span><a class="anchor-link" href="#Automatic-Essay-Scoring-of-multiple-traits-based-on-Transformer-sentences-models">&#182;</a></h2><p><center>Natural Language Undertanding</center>
+</figure><h1 id="Aprendizaje-Profundo"><span style="color:blue"><left>Aprendizaje Profundo</left></span><a class="anchor-link" href="#Aprendizaje-Profundo">&#182;</a></h1><h2 id="Automatic-Essay-Scoring-of-multiple-traits-based-on-Transformer-sentences-models"><span style="color:red"><center>Automatic Essay Scoring of multiple traits based on Transformer-sentences models</center></span><a class="anchor-link" href="#Automatic-Essay-Scoring-of-multiple-traits-based-on-Transformer-sentences-models">&#182;</a></h2><p><center>Natural Language Understanding</center>
 <br></br></p>
 <ul>
 <li><p>Alvaro Mauricio Montenegro Díaz, Universidad Nacional de Colombia, ammontenegrod@unal.edu.co</p>
@@ -15194,7 +15211,7 @@ and most other capitalized words.</p>
 </div>
 </div>
 </div>
-</div>
+</div></section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -15753,7 +15770,7 @@ The hyperparameters were:</p>
 <tr>
 <td>Spearman-$\rho$</td>
 <td>0.94</td>
-<td>094</td>
+<td>0.94</td>
 <td>0.94</td>
 </tr>
 </tbody>
